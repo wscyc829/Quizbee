@@ -1,5 +1,5 @@
 @font-face { font-family: Neoteric; src: url('../fonts/neoteric.ttf'); }
-@font-face { font-family: 'DK Yellow Lemon Sun'; src: url('../fonts/lemon.ttf'); }
+@font-face { font-family: 'Lemon'; src: url('../fonts/lemon.otf'); }
 
 /* %%%%%%%%%%%%%%% HEADER %%%%%%%%%%%%%%% */
 
@@ -12,6 +12,12 @@ header {
 	left: 0;
 	overflow: hidden;
 	background-color: rgba(41, 128, 185, 1.0);
+}
+
+header > span{
+	padding-left: 10px;
+	color: white;
+	font-family: Neoteric;
 }
 
 header > button {
@@ -44,7 +50,7 @@ header > button:focus {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
 	color: #f1c40f;
-	font-family: 'DK Lemon Yellow Sun';
+	font-family: 'Lemon';
 	font-size: 30px;
 
 }
@@ -85,7 +91,7 @@ header > button:focus {
 	background-color: rgba(0, 0, 0, 0.0);
 }
 
-#roomlist > input[type="button"] {
+#roomlist > input[type="button"], #friendslist > input[type="button"]{
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -94,11 +100,11 @@ header > button:focus {
 	border: 0;
 	background-color: #f39c12;
 	color: white;
-	font-family: 'DK Lemon Yellow Sun';
+	font-family: 'Lemon';
 	font-size: 30px;
 }
 
-#roomlist > input[type="button"]:hover {
+#roomlist > input[type="button"]:hover, #friendslist> input[type="button"]:hover {
 	background-color: #f1c40f;
 }
 
